@@ -18,10 +18,8 @@ import requests
 
 from .functions import Set, Get
 
+logging.getLogger(__name__).addHandler(logging.NullHandler())
 LOGGER = logging.getLogger(__name__)
-logging.basicConfig()
-
-LOGGER.setLevel(logging.INFO)
 
 
 class NatMode(Enum):
